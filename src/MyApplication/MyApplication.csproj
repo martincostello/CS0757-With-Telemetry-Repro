@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>MyApplication</RootNamespace>
+    <TargetFramework>net8.0</TargetFramework>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup Condition=" '$(IncludeTelemetry)' == 'true' ">
+    <PackageReference Include="Microsoft.Extensions.Telemetry" Version="8.0.0-rc.1.23409.4" />
+  </ItemGroup>
+</Project>
